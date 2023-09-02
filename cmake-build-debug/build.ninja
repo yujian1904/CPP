@@ -49,11 +49,11 @@ cmake_ninja_workdir = D$:/YuJian/IDEWorkSpace/Clion/CPP/cmake-build-debug/
 
 build cmake_object_order_depends_target_CPP: phony || CMakeFiles/CPP.dir
 
-build CMakeFiles/CPP.dir/CppBasic/demo02.cpp.obj: CXX_COMPILER__CPP_unscanned_Debug D$:/YuJian/IDEWorkSpace/Clion/CPP/CppBasic/demo02.cpp || cmake_object_order_depends_target_CPP
-  DEP_FILE = CMakeFiles\CPP.dir\CppBasic\demo02.cpp.obj.d
+build CMakeFiles/CPP.dir/tempClass/vectora.cpp.obj: CXX_COMPILER__CPP_unscanned_Debug D$:/YuJian/IDEWorkSpace/Clion/CPP/tempClass/vectora.cpp || cmake_object_order_depends_target_CPP
+  DEP_FILE = CMakeFiles\CPP.dir\tempClass\vectora.cpp.obj.d
   FLAGS = -g -std=gnu++11 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\CPP.dir
-  OBJECT_FILE_DIR = CMakeFiles\CPP.dir\CppBasic
+  OBJECT_FILE_DIR = CMakeFiles\CPP.dir\tempClass
 
 
 # =============================================================================
@@ -63,7 +63,7 @@ build CMakeFiles/CPP.dir/CppBasic/demo02.cpp.obj: CXX_COMPILER__CPP_unscanned_De
 #############################################
 # Link the executable CPP.exe
 
-build CPP.exe: CXX_EXECUTABLE_LINKER__CPP_Debug CMakeFiles/CPP.dir/CppBasic/demo02.cpp.obj
+build CPP.exe: CXX_EXECUTABLE_LINKER__CPP_Debug CMakeFiles/CPP.dir/tempClass/vectora.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\CPP.dir

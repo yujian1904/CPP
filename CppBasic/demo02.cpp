@@ -119,3 +119,11 @@ int main() {
 
     return 0;
 }
+
+string getname()
+{
+    string temp;
+    cout << "Enter your name: " << endl;
+    getline(cin,name);
+    return temp;
+}

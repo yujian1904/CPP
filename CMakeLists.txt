@@ -3,4 +3,5 @@ project(CPP)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(CPP CppBasic/demo02.cpp)
+add_executable(CPP
+        tempClass/vectora.cpp)
