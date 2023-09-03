@@ -38,7 +38,10 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++11 -fdiagnostics-color=always"
+					"fragment" : "-g -fdiagnostics-color=always"
+				},
+				{
+					"fragment" : "-std=gnu++11"
 				}
 			],
 			"language" : "CXX",
@@ -98,7 +101,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "tempClass/vectora.cpp",
+			"path" : "CppBasic/loop.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

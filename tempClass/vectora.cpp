@@ -5,6 +5,7 @@
 using namespace std;
 
 int main() {
+    cout << "hello" << endl;
     /*
     vector<int> vi;
     vi.push_back(4);

@@ -9,7 +9,7 @@
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.26"
+						"string" : "3.25"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "CPP::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-CPP-Debug-c1297cea992f6dc3f1f1.json",
+					"jsonFile" : "target-CPP-Debug-a0d25ebb2a841cb99657.json",
 					"name" : "CPP",
 					"projectIndex" : 0
 				}
@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/YuJian/IDEWorkSpace/Clion/CPP/cmake-build-debug",
-		"source" : "D:/YuJian/IDEWorkSpace/Clion/CPP"
+		"build" : "D:/IDEWorkSpace/CLion/CPP/cmake-build-debug",
+		"source" : "D:/IDEWorkSpace/CLion/CPP"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 5
+		"minor" : 4
 	}
 }
