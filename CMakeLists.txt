@@ -4,4 +4,6 @@ project(CPP)
 set(CMAKE_CXX_STANDARD 11)
 
 add_executable(CPP
-        CppBasic/loop.cpp)
+        function/funptr.cpp
+        tempClass/array.cpp
+)
