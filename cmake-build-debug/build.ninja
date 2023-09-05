@@ -49,17 +49,11 @@ cmake_ninja_workdir = D$:/YuJian/IDEWorkSpace/Clion/CPP/cmake-build-debug/
 
 build cmake_object_order_depends_target_CPP: phony || CMakeFiles/CPP.dir
 
-build CMakeFiles/CPP.dir/function/funptr.cpp.obj: CXX_COMPILER__CPP_unscanned_Debug D$:/YuJian/IDEWorkSpace/Clion/CPP/function/funptr.cpp || cmake_object_order_depends_target_CPP
-  DEP_FILE = CMakeFiles\CPP.dir\function\funptr.cpp.obj.d
+build CMakeFiles/CPP.dir/oop/demo01.cpp.obj: CXX_COMPILER__CPP_unscanned_Debug D$:/YuJian/IDEWorkSpace/Clion/CPP/oop/demo01.cpp || cmake_object_order_depends_target_CPP
+  DEP_FILE = CMakeFiles\CPP.dir\oop\demo01.cpp.obj.d
   FLAGS = -g -std=gnu++11 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\CPP.dir
-  OBJECT_FILE_DIR = CMakeFiles\CPP.dir\function
-
-build CMakeFiles/CPP.dir/tempClass/array.cpp.obj: CXX_COMPILER__CPP_unscanned_Debug D$:/YuJian/IDEWorkSpace/Clion/CPP/tempClass/array.cpp || cmake_object_order_depends_target_CPP
-  DEP_FILE = CMakeFiles\CPP.dir\tempClass\array.cpp.obj.d
-  FLAGS = -g -std=gnu++11 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\CPP.dir
-  OBJECT_FILE_DIR = CMakeFiles\CPP.dir\tempClass
+  OBJECT_FILE_DIR = CMakeFiles\CPP.dir\oop
 
 
 # =============================================================================
@@ -69,7 +63,7 @@ build CMakeFiles/CPP.dir/tempClass/array.cpp.obj: CXX_COMPILER__CPP_unscanned_De
 #############################################
 # Link the executable CPP.exe
 
-build CPP.exe: CXX_EXECUTABLE_LINKER__CPP_Debug CMakeFiles/CPP.dir/function/funptr.cpp.obj CMakeFiles/CPP.dir/tempClass/array.cpp.obj
+build CPP.exe: CXX_EXECUTABLE_LINKER__CPP_Debug CMakeFiles/CPP.dir/oop/demo01.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\CPP.dir
