@@ -4,5 +4,7 @@ project(CPP)
 set(CMAKE_CXX_STANDARD 11)
 
 add_executable(CPP
-        oop/demo01.cpp
+        files/main.cpp
+        files/head.h
+        files/implement.cpp
 )
