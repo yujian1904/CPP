@@ -4,8 +4,7 @@ project(CPP)
 set(CMAKE_CXX_STANDARD 11)
 
 add_executable(CPP
-
-        operator/Time.cpp
-        operator/Time.h
-        operator/usetime.cpp
+        classWithNew/String.cpp
+        classWithNew/String.h
+        classWithNew/main.cpp
 )
