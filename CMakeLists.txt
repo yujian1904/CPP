@@ -4,7 +4,8 @@ project(CPP)
 set(CMAKE_CXX_STANDARD 11)
 
 add_executable(CPP
-        classWithNew/String.cpp
-        classWithNew/String.h
-        classWithNew/main.cpp
+        extend/tabtenn.cpp
+        extend/tabtenn.h
+        extend/usett1.cpp
+
 )

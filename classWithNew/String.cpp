@@ -16,6 +16,7 @@ int String::HowMany() {
 // class methods
 String::String(const char *s)     // construct String from C string
 {
+    cout << "construct String from C string\n";
     len = std::strlen(s);          // set size
     str = new char[len + 1];       // allot storage
     std::strcpy(str, s);           // initialize pointer
@@ -24,6 +25,7 @@ String::String(const char *s)     // construct String from C string
 
 String::String()                   // default constructor
 {
+    cout << "default constructor\n";
     len = 4;
     str = new char[1];
     str[0] = '\0';                 // default string
@@ -31,6 +33,7 @@ String::String()                   // default constructor
 }
 
 String::String(const String &st) {
+    cout << "copy constructor\n";
     num_strings++;             // handle static member update
     len = st.len;              // same length
     str = new char[len + 1];  // allot space
@@ -39,6 +42,7 @@ String::String(const String &st) {
 
 String::~String()                     // necessary destructor
 {
+    cout << "necessary destructor\n";
     --num_strings;                    // required
     delete[] str;                    // required
 }
@@ -47,6 +51,7 @@ String::~String()                     // necessary destructor
 
 // assign a String to a String
 String &String::operator=(const String &st) {
+    cout << "overload = with an object\n";
     if (this == &st)
         return *this;
     delete[] str;
@@ -58,6 +63,7 @@ String &String::operator=(const String &st) {
 
 // assign a C string to a String
 String &String::operator=(const char *s) {
+    cout << "overload = with a C String\n";
     delete[] str;
     len = std::strlen(s);
     str = new char[len + 1];

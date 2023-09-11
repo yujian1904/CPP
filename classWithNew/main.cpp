@@ -1,66 +1,58 @@
-#include <iostream>
-#include <cstdlib>      // (or stdlib.h) for rand(), srand()
-#include <ctime>        // (or time.h) for time()
+#include "iostream"
+#include "fstream"
+#include "cstdlib"
 #include "String.h"
 
+using namespace std;
 const int ArSize = 10;
 const int MaxLen = 81;
 
 int main() {
-    using namespace std;
+    ifstream inFile;
+    string filename = "../classWithNew/data.txt";
+    inFile.open(filename);
+    if (!inFile.is_open()) {
+        cout << "Could not open the file " << filename << endl;
+        cout << "Program terminating.\n";
+        exit(EXIT_FAILURE);
+    } else
+        cout << "open file success" << endl;
+//    string str[ArSize];
+    String sayings[ArSize];
+    char temp[MaxLen];
+    int i;
+    for (i = 0; i < ArSize; i++) {
+        inFile.get(temp, MaxLen);
+        while (inFile && inFile.get() != '\n')
+            continue;
+//        cout << !inFile << endl;
+        if (temp[0] == '\0')
+            break;
+        else
+            sayings[i] = temp;
+    }
+    int total = i;
+
     String name;
     cout << "Hi, what's your name?\n>> ";
     cin >> name;
-
-    cout << name << ", please enter up to " << ArSize
-         << " short sayings <empty line to quit>:\n";
-    String sayings[ArSize];
-    char temp[MaxLen];               // temporary string storage
-    int i;
-    for (i = 0; i < ArSize; i++) {
-        cout << i + 1 << ": ";
-        cin.get(temp, MaxLen);
-        while (cin && cin.get() != '\n')
-            continue;
-        if (!cin || temp[0] == '\0') // empty line?
-            break;                   // i not incremented
-        else
-            sayings[i] = temp;       // overloaded assignment
+    cout << name << ", please enter up to " << ArSize << " short sayings <empty line to quit>:\n";
+    for (int j = 0; j < total; ++j) {
+        cout << sayings[j] << endl;
     }
-    int total = i;                   // total # of lines read
-
     if (total > 0) {
-        cout << "Here are your sayings:\n";
-        for (i = 0; i < total; i++)
-            cout << sayings[i] << "\n";
-
-        // use pointers to keep track of shortest, first strings
-        String *shortest = &sayings[0]; // initialize to first object
-        String *first = &sayings[0];
-        for (i = 1; i < total; i++) {
-            if (sayings[i].length() < shortest->length())
-                shortest = &sayings[i];
-            if (sayings[i] < *first)     // compare values
-                first = &sayings[i];     // assign address
+        int shortest = 0;
+        int first = 0;
+        for (int i = 0; i < total; ++i) {
+            if (sayings[i].length() < sayings[shortest].length())
+                shortest = i;
+            if (sayings[i] < sayings[first])
+                first = i;
         }
-        cout << "Shortest saying:\n" << *shortest << endl;
-        cout << "First alphabetically:\n" << *first << endl;
-
-        srand(time(0));
-        int choice = rand() % total; // pick index at random
-        // use new to create, initialize new String object
-        String *favorite = new String(sayings[choice]);
-        cout << "My favorite saying:\n" << *favorite << endl;
-        delete favorite;
+        cout << "Shortest saysing:\n" << sayings[shortest] << endl;
+        cout << "First alphabetically:\n" << sayings[first] << endl;
+        cout << "This program used " << String::HowMany << " String objects.Bye.\n";
     } else
-        cout << "Not much to say, eh?\n";
-    cout << "Bye.\n";
-// keep window open
-/*    if (!cin)
-        cin.clear();
-    while (cin.get() != '\n')
-        continue;
-    cin.get();
-*/
+        cout << "No input! Bye.n";
     return 0;
 }
