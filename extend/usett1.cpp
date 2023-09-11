@@ -19,5 +19,10 @@ int main() {
     cout << "Name: ";
     rPlayer1.Name();
     cout << "; Rating: " << rPlayer1.Rating() << endl;
+    RatedPlayer rplayer2(1212, player1);
+    cout << "Name: ";
+    rplayer2.Name();
+    cout << "; Rating: " << rplayer2.Rating() << endl;
 
+    return 0;
 }

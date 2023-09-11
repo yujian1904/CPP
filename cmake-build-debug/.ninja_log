@@ -1,5 +1,5 @@
 # ninja log v5
-411	563	7161006385775039	CPP.exe	797d8cdf8ce55c8c
-15	871	7161006236891086	CMakeFiles/CPP.dir/classWithNew/main.cpp.obj	a195ff5b5c089211
-1	185	7161202327147536	build.ninja	16720e9204675293
-4	410	7161006384298706	CMakeFiles/CPP.dir/classWithNew/String.cpp.obj	3ee152cb9bbcf091
+1253	1554	7161371988989324	CPP.exe	20cebed4ecf8927
+39	1252	7161371986041017	CMakeFiles/CPP.dir/extend/usett1.cpp.obj	76f136ee9528ff21
+1	185	7161438285737160	build.ninja	16720e9204675293
+1	1221	7161371985671232	CMakeFiles/CPP.dir/extend/tabtenn.cpp.obj	d1df184ade4cce8e
