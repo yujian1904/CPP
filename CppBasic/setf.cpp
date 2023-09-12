@@ -40,7 +40,7 @@ void file_it(ostream &os, double fo, const double fe[], int n) {
     // save initial formatting state
     ios_base::fmtflags initial;
     initial = os.setf(ios_base::fixed, ios_base::floatfield);
-    std::streamsize sz = os.precision(0);
+    std::streamsize sz = os.precision(0);//return the previous value of precision()
     os << "Focal length of objective: " << fo << " mm\n";
     os.precision(1);
     os.width(15);

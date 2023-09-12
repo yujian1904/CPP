@@ -4,7 +4,8 @@ project(CPP)
 set(CMAKE_CXX_STANDARD 11)
 
 add_executable(CPP
-        extend/acctabc.cpp
-        extend/acctabc.h
+        Basic/data.cpp
+        Basic/fun_def.cpp
+        Basic/declare.h
 
 )

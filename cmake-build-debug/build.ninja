@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = D$:/YuJian/IDEWorkSpace/Clion/CPP/cmake-build-debug/
+cmake_ninja_workdir = D$:/IDEWorkSpace/CLion/CPP/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target CPP
 
@@ -49,11 +49,17 @@ cmake_ninja_workdir = D$:/YuJian/IDEWorkSpace/Clion/CPP/cmake-build-debug/
 
 build cmake_object_order_depends_target_CPP: phony || CMakeFiles/CPP.dir
 
-build CMakeFiles/CPP.dir/extend/acctabc.cpp.obj: CXX_COMPILER__CPP_unscanned_Debug D$:/YuJian/IDEWorkSpace/Clion/CPP/extend/acctabc.cpp || cmake_object_order_depends_target_CPP
-  DEP_FILE = CMakeFiles\CPP.dir\extend\acctabc.cpp.obj.d
+build CMakeFiles/CPP.dir/Basic/data.cpp.obj: CXX_COMPILER__CPP_unscanned_Debug D$:/IDEWorkSpace/CLion/CPP/Basic/data.cpp || cmake_object_order_depends_target_CPP
+  DEP_FILE = CMakeFiles\CPP.dir\Basic\data.cpp.obj.d
   FLAGS = -g -std=gnu++11 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\CPP.dir
-  OBJECT_FILE_DIR = CMakeFiles\CPP.dir\extend
+  OBJECT_FILE_DIR = CMakeFiles\CPP.dir\Basic
+
+build CMakeFiles/CPP.dir/Basic/fun_def.cpp.obj: CXX_COMPILER__CPP_unscanned_Debug D$:/IDEWorkSpace/CLion/CPP/Basic/fun_def.cpp || cmake_object_order_depends_target_CPP
+  DEP_FILE = CMakeFiles\CPP.dir\Basic\fun_def.cpp.obj.d
+  FLAGS = -g -std=gnu++11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\CPP.dir
+  OBJECT_FILE_DIR = CMakeFiles\CPP.dir\Basic
 
 
 # =============================================================================
@@ -63,7 +69,7 @@ build CMakeFiles/CPP.dir/extend/acctabc.cpp.obj: CXX_COMPILER__CPP_unscanned_Deb
 #############################################
 # Link the executable CPP.exe
 
-build CPP.exe: CXX_EXECUTABLE_LINKER__CPP_Debug CMakeFiles/CPP.dir/extend/acctabc.cpp.obj
+build CPP.exe: CXX_EXECUTABLE_LINKER__CPP_Debug CMakeFiles/CPP.dir/Basic/data.cpp.obj CMakeFiles/CPP.dir/Basic/fun_def.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\CPP.dir
@@ -78,7 +84,7 @@ build CPP.exe: CXX_EXECUTABLE_LINKER__CPP_Debug CMakeFiles/CPP.dir/extend/acctab
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\YuJian\IDEWorkSpace\Clion\CPP\cmake-build-debug && "C:\developTools\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D D:\IDEWorkSpace\CLion\CPP\cmake-build-debug && "C:\Development Tools\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -89,7 +95,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\YuJian\IDEWorkSpace\Clion\CPP\cmake-build-debug && "C:\developTools\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SD:\YuJian\IDEWorkSpace\Clion\CPP -BD:\YuJian\IDEWorkSpace\Clion\CPP\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D D:\IDEWorkSpace\CLion\CPP\cmake-build-debug && "C:\Development Tools\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SD:\IDEWorkSpace\CLion\CPP -BD:\IDEWorkSpace\CLion\CPP\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -107,7 +113,7 @@ build CPP: phony CPP.exe
 # =============================================================================
 
 #############################################
-# Folder: D:/YuJian/IDEWorkSpace/Clion/CPP/cmake-build-debug
+# Folder: D:/IDEWorkSpace/CLion/CPP/cmake-build-debug
 
 build all: phony CPP.exe
 
@@ -118,14 +124,14 @@ build all: phony CPP.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake D$:/YuJian/IDEWorkSpace/Clion/CPP/CMakeLists.txt
+build build.ninja: RERUN_CMAKE | C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake D$:/IDEWorkSpace/CLion/CPP/CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake C$:/developTools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake D$:/YuJian/IDEWorkSpace/Clion/CPP/CMakeLists.txt: phony
+build C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake C$:/Development$ Tools/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake D$:/IDEWorkSpace/CLion/CPP/CMakeLists.txt: phony
 
 
 #############################################
