@@ -4,7 +4,7 @@ project(CPP)
 set(CMAKE_CXX_STANDARD 11)
 
 add_executable(CPP
-        extend/brass.cpp
-        extend/brass.h
+        extend/acctabc.cpp
+        extend/acctabc.h
 
 )
