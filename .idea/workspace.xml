@@ -20,28 +20,50 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbbf47cb-1c91-4dc1-a796-c5f194044469" name="更改" comment="20230906-001">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2023_9_5_20_26____.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行更新之前于_2023_9_5_20_26_取消提交了更改_[更改]/.ninja_deps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行更新之前于_2023_9_5_20_26_取消提交了更改_[更改]/CPP.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行更新之前于_2023_9_5_20_26_取消提交了更改_[更改]/LastTest.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行更新之前于_2023_9_5_20_26_取消提交了更改_[更改]/funptr.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行更新之前于_2023_9_5_20_26_取消提交了更改_[更改]/shelved.patch" beforeDir="false" />
+    <list default="true" id="cbbf47cb-1c91-4dc1-a796-c5f194044469" name="更改" comment="20230913-end">
+      <change afterPath="$PROJECT_DIR$/Basic/data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2023_9_6_17_57____.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2023_9_7_7_52____.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2023_9_7_7_53____.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行更新之前于_2023_9_6_17_57_取消提交了更改_[更改]/.ninja_deps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行更新之前于_2023_9_6_17_57_取消提交了更改_[更改]/CPP.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行更新之前于_2023_9_6_17_57_取消提交了更改_[更改]/LastTest.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行更新之前于_2023_9_6_17_57_取消提交了更改_[更改]/demo01.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行更新之前于_2023_9_6_17_57_取消提交了更改_[更改]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行更新之前于_2023_9_7_7_52_取消提交了更改_[更改]/.ninja_deps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行更新之前于_2023_9_7_7_52_取消提交了更改_[更改]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行更新之前于_2023_9_7_7_53_取消提交了更改_[更改]/.ninja_deps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行更新之前于_2023_9_7_7_53_取消提交了更改_[更改]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Basic/data.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/data.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/declare.h" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/declare.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/fun_def.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/fun_def.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CppBasic/demo01.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CppBasic/demo02.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CppBasic/ep-data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CppBasic/loop.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CppBasic/ref.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CppBasic/setf.cpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CPP.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CPP.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/余额.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/余额.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileIO/carinfo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileIO/fin.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileIO/fout.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileIO/scores.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/head.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/implement.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/function/demo01.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/function/demo02.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/function/demo03.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/function/demo04.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/function/funptr.cpp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,11 +151,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CPP" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CPP" TARGET_NAME="CPP" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CPP" RUN_TARGET_NAME="CPP">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -162,6 +179,8 @@
       <workItem from="1694091384162" duration="6632000" />
       <workItem from="1694236600811" duration="616000" />
       <workItem from="1694336101255" duration="4735000" />
+      <workItem from="1694650495246" duration="14639000" />
+      <workItem from="1694678410275" duration="4692000" />
     </task>
     <task id="LOCAL-00001" summary="20230902-001">
       <option name="closed" value="true" />
@@ -235,7 +254,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694078319898</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="20230913-end">
+      <option name="closed" value="true" />
+      <created>1694596864559</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1694596864559</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,7 +295,8 @@
     <MESSAGE value="20230905-003" />
     <MESSAGE value="20230906-006" />
     <MESSAGE value="20230906-001" />
-    <option name="LAST_COMMIT_MESSAGE" value="20230906-001" />
+    <MESSAGE value="20230913-end" />
+    <option name="LAST_COMMIT_MESSAGE" value="20230913-end" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

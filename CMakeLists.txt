@@ -5,5 +5,6 @@ set(CMAKE_CXX_STANDARD 11)
 
 add_executable(CPP
         Basic/data.cpp
-
+        Basic/declare.h
+        Basic/fun_def.cpp
 )

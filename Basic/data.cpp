@@ -1,40 +1,11 @@
-//C++æ•°æ®ç±»å‹åŠæ§åˆ¶è¯­å¥
+//C++Êı¾İÀàĞÍ¼°¿ØÖÆÓï¾ä
 #include "iostream"
-#include "string"
-//#include "declare.h"
+#include "declare.h"
 
 using namespace std;
-const int StringSize = 40;
-const int ArraySize = 10;
-const int StructSize = 5;
-enum Sex {
-    man, woman
-};
-enum Week {
-    Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
-};
-struct Name {
-    string fristName;
-    string lastName;
-};
-struct student {
-    string name;
-    Sex str_sex;
-    int age;
-};
-union un {
-    char a;
-    int b;
-    long long ll;
-};
-
-void displayStudent(const student *);
-
-template<typename T>
-void swap(const T &a, const T &b);
 
 int main() {
-    //åŸºæœ¬æ•°æ®ç±»å‹å£°æ˜ã€åˆå§‹åŒ–ã€è¾“å…¥ã€è¾“å‡º
+    //»ù±¾Êı¾İÀàĞÍÉùÃ÷¡¢³õÊ¼»¯¡¢ÊäÈë¡¢Êä³ö
     bool ft = true;
     char ch = 'B';
     unsigned char uch = 156;
@@ -46,12 +17,12 @@ int main() {
     unsigned long uli = 39UL;
     long long lli = 168LL;
     unsigned long long ulli = 468ULL;
-    //æµ®ç‚¹å‹
+    //¸¡µãĞÍ
     float fl = 2.78f;
     double dou = 3535.62;
     long double ld = 43245.25L;
 
-    cout << "åŸºæœ¬æ•°æ®ç±»å‹è¾“å‡º:\n";
+    cout << "---------»ù±¾Êı¾İÀàĞÍ----------:\n";
     if (ft) {
         cout << sizeof(bool) << " Byte " << "bool(True):" << ft << endl;
         ft = false;
@@ -75,14 +46,28 @@ int main() {
         cout.precision(sz);
 
     }
-//    cin.get(ch);
-//    cout.put(ch);
 
-    //å¤åˆæ•°æ®ç±»å‹å£°æ˜ã€åˆå§‹åŒ–ã€å…ƒç´ è®¿é—®ã€éå†
-    //1.åŸºæœ¬æ•°æ®ç±»å‹æ•°ç»„åŠC string
+    //¸´ºÏÊı¾İÀàĞÍÉùÃ÷¡¢³õÊ¼»¯¡¢ÔªËØ·ÃÎÊ¡¢±éÀú
+    //1.»ù±¾Êı¾İÀàĞÍÊı×é¼°C string
     int i_array[ArraySize] = {81, 89, 24, 60, 87, 20, 41, 24, 71, 60};
     char m_string[StringSize] = "Hello World!";
-    //2.ç»“æ„ã€ç»“æ„æ•°ç»„
+
+    char *m_ptr = new char[StringSize];
+    cout << "please enter a string:\n";
+    ifstream inFile;
+    inFile.open("../Basic/data.txt");
+    if (!inFile.is_open())  // failed to open file
+    {
+        cout << "Could not open the file " << endl;
+        cout << "Program terminating.\n";
+        // cin.get();    // keep window open
+        exit(EXIT_FAILURE);
+    }
+    inFile.get(m_ptr, StringSize).get();
+    //cin.get(m_ptr, StringSize).get();
+    //cin.get();
+    cout << "your string is: " << m_ptr << endl;
+    //2.½á¹¹¡¢½á¹¹Êı×é
     Name my_name = {"yu", "jian"};
     student stu[StructSize] = {
             {"yujian",     man,   20},
@@ -91,7 +76,7 @@ int main() {
             {"xukaixin",   man,   30},
             {"huozhihang", man,   29}
     };
-    //3.æŒ‡é’ˆ
+    //3.Ö¸Õë
     Name *pn = &my_name;
     student *pstu = stu;
     //4.enum
@@ -100,8 +85,9 @@ int main() {
     un my_union;
     my_union.ll = 324;
     cout << sizeof(my_union) << endl;
-    //æ§åˆ¶è¯­å¥ï¼šå¾ªç¯ï¼ˆfor/while/do...while/åŸºäºèŒƒå›´çš„for)
-    //éå†æ•°ç»„
+    //¿ØÖÆÓï¾ä£ºÑ­»·£¨for/while/do...while/»ùÓÚ·¶Î§µÄfor)
+    //±éÀúÊı×é
+    cout << "------Ê¹ÓÃÑ­»·±éÀúÊı×é--------" << endl;
     cout << ArraySize << " items of array(use for{}):\n";
     for (int i = 0; i < ArraySize; ++i) {
         cout << i_array[i] << "   ";
@@ -132,28 +118,76 @@ int main() {
             cout << "\n";
         count++;
     }
-    //éå†ç»“æ„æ•°ç»„
+    count = 0;
+    cout << "------±éÀú½á¹¹Êı×é--------" << endl;
     for (student s: stu) {
+        //displayStudent()½ÓÊÜÒ»¸öconst student *£¬ËùÒÔÓ¦´«µİÒ»¸öµØÖ·
         displayStudent(&s);
     }
+    //ar2[r][c] == *(*(ar2+r)+c);
+    for (int k = 0; k < StructSize; ++k) {
+        cout << (pstu + k)->name << " is a " << (pstu + k)->age << " years old" << (pstu + k)->str_sex << endl;
+    }
 
-    //åˆ†æ”¯è¯­å¥ï¼šif/switchï¼Œbreak,continue
+    //·ÖÖ§Óï¾ä£ºif/switch£¬break,continue
+    int choice = 0;
+    cout << "Please enter a number(between 1-5):\n";
+    cin >> choice;
+    while (choice != 5) {
+        switch (choice) {
+            case 1:
+                cout << "Your choice is 1" << endl;
+                break;
+            case 2:
+                cout << "Your choice is 2" << endl;
+                break;
+            case 3:
+                cout << "Your choice is 3" << endl;
+                break;
+            case 4:
+                cout << "Your choice is 4" << endl;
+                break;
+            default:
+                cout << "That's not a choice.\n";
+        }
+        cout << "Please enter a number(between 1-5):\n";
+        cin >> choice;
+    }
+    //º¯Êı¡¢Êµ²Î¡¢ĞÎ²Î¡¢ÖØÔØ¡¢Ä£°å
+    cout << "------º¯Êı¡¢Ä£°å--------" << endl;
+    char ch1 = 'G';
+    char ch2 = 'D';
+    m_swap(ch1, ch2);
+    cout << "before swap(): ch1 = G, ch2 = D.\n";
+    cout << "After swap(): ch1 = " << ch1 << ", ch2 = " << ch2 << endl;
+    m_swap(stu[0], stu[1]);
+    for (student s: stu) {
+        //displayStudent()½ÓÊÜÒ»¸öconst student *£¬ËùÒÔÓ¦´«µİÒ»¸öµØÖ·
+        displayStudent(&s);
+    }
+    int m_a = 11;
+    int m_b = 22;
+    m_swap(m_a, m_b);
+    cout << "m_a is " << m_a << ", m_b is " << m_b << endl;
 
-    //å‡½æ•°ã€å®å‚ã€å½¢å‚ã€é‡è½½ã€æ¨¡æ¿
+    char *str = testCharArray(m_string);
+    cout << str << endl;
+    inFile.close();
+    ofstream outFile;
+    outFile.open("../Basic/data.txt");
+    outFile << "outfile test!" << endl;
+    outFile.close();
+    delete str;
+
+    int code;
+    //º¯ÊıÖ¸Õë
+    cout << "How many lines of code do you need? \n";
+    cin >> code;
+    cout << "Here's Betsy's estimate:\n";
+    estimate(code, betsy);
+    cout << "Here's Pam's estimate:\n";
+    estimate(code, pam);
+
+    return 0;
 }
 
-void displayStudent(const student *pstu) {
-    cout << pstu->name << " is " << pstu->str_sex << ". ";
-    if (pstu->str_sex == man)
-        cout << "His age is " << pstu->age << endl;
-    else
-        cout << "Her age is " << pstu->age << endl;
-}
-
-template<typename T>
-void swap(const T &a, const T &b) {
-    T temp;
-    temp = a;
-    a = b;
-    b = temp;
-}
