@@ -20,25 +20,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbbf47cb-1c91-4dc1-a796-c5f194044469" name="更改" comment="20230920-001">
-      <change afterPath="$PROJECT_DIR$/oop/AcctABC.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oop/AcctABC.h" afterDir="false" />
+    <list default="true" id="cbbf47cb-1c91-4dc1-a796-c5f194044469" name="更改" comment="20230925-001">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop/dma.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop/dma.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop/usedma.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/余额.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/余额.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/AcctABC.h" beforeDir="false" afterPath="$PROJECT_DIR$/oop/AcctABC.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,11 +116,6 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -165,7 +145,9 @@
       <workItem from="1695088310914" duration="2165000" />
       <workItem from="1695106318651" duration="1187000" />
       <workItem from="1695193157698" duration="1742000" />
-      <workItem from="1695353242202" duration="2297000" />
+      <workItem from="1695353242202" duration="3069000" />
+      <workItem from="1695600609788" duration="412000" />
+      <workItem from="1695603236935" duration="4710000" />
     </task>
     <task id="LOCAL-00001" summary="20230902-001">
       <option name="closed" value="true" />
@@ -263,7 +245,23 @@
       <option name="project" value="LOCAL" />
       <updated>1695193594731</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="20230920-001">
+      <option name="closed" value="true" />
+      <created>1695385580212</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1695385580212</updated>
+    </task>
+    <task id="LOCAL-00014" summary="20230925-001">
+      <option name="closed" value="true" />
+      <created>1695601015293</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1695601015293</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,7 +297,8 @@
     <MESSAGE value="20230913-end" />
     <MESSAGE value="20230912-end" />
     <MESSAGE value="20230920-001" />
-    <option name="LAST_COMMIT_MESSAGE" value="20230920-001" />
+    <MESSAGE value="20230925-001" />
+    <option name="LAST_COMMIT_MESSAGE" value="20230925-001" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
